@@ -1,0 +1,14 @@
+{
+  "name": "cdt-ai-module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build and preview Marp slide decks for the CDT AI module.",
+  "scripts": {
+    "slides": "node scripts/build_slides.mjs",
+    "preview": "marp --server --allow-local-files slides",
+    "clean": "node scripts/build_slides.mjs --clean"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.3"
+  }
+}
