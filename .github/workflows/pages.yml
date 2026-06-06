@@ -27,19 +27,26 @@ jobs:
           node-version: '22'
           cache: npm
 
-      - name: Install dependencies
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Install Node dependencies
         run: npm ci
 
-      - name: Build slides
-        run: npm run slides
-
       - name: Configure GitHub Pages
+        id: pages
         uses: actions/configure-pages@v5
+
+      - name: Build slides and Jekyll site
+        run: make slides JEKYLL_BASEURL="${{ steps.pages.outputs.base_path }}"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: _site
 
   deploy:
     environment:

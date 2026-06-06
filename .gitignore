@@ -1,6 +1,11 @@
 node_modules/
 public/
+_site/
 .marp-cache/
+.jekyll-cache/
+.bundle/
+vendor/bundle/
+.DS_Store
 __pycache__/
 *.py[cod]
 ~$*.pptx

@@ -4,8 +4,6 @@ theme: default
 paginate: true
 ---
 
----
-
 # How to facilitate / support impact / partnership building / international collaboration / commercialisation
 
 - - Understand research impact and its precursors (i.e., pathways to impact)

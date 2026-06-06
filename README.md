@@ -4,14 +4,15 @@ This repository contains source PowerPoint decks, converted Marp Markdown decks,
 
 ## Install dependencies
 
-Install Python dependencies for PowerPoint conversion and Node dependencies for Marp builds:
+Install Python dependencies for PowerPoint conversion, Node dependencies for Marp builds, and Ruby/Jekyll dependencies for the themed index page:
 
 ```bash
 python -m pip install -r requirements.txt
 npm install
+bundle install
 ```
 
-For CI, use `npm ci` instead of `npm install`.
+For CI, use `npm ci` instead of `npm install`; GitHub Actions handles the Ruby bundle automatically.
 
 ## Convert PowerPoint decks to Marp Markdown
 
@@ -29,15 +30,18 @@ Render all `slides/*.md` decks to static HTML:
 make slides
 ```
 
-Generated output is written to `public/`:
+The Marp build writes generated Jekyll source files to `public/`, then Jekyll renders the publishable site to `_site/` using the Minimal Mistakes theme:
 
 ```text
-public/index.html
+public/index.md
+public/_config.yml
 public/slides/<deck-name>/index.html
 public/slides/images/<deck-name>/...
+_site/index.html
+_site/slides/<deck-name>/index.html
 ```
 
-`public/` is generated and ignored by git.
+`public/` and `_site/` are generated and ignored by git.
 
 ## Preview slides locally
 
@@ -55,18 +59,21 @@ This serves the source decks from `slides/` for interactive local preview.
 make clean
 ```
 
-This removes `public/` and the temporary `.marp-cache/` build directory.
+This removes `public/`, `_site/`, and the temporary `.marp-cache/` build directory.
 
 ## Deploy via GitHub Pages
 
 GitHub Pages is built by `.github/workflows/pages.yml` using GitHub Actions. On each push to `main`, the workflow:
 
 1. installs Node dependencies with `npm ci`,
-2. runs `npm run slides`,
-3. uploads `public/` with `actions/upload-pages-artifact`, and
-4. deploys with `actions/deploy-pages`.
+2. installs Ruby/Jekyll dependencies with Bundler,
+3. runs `make slides`, which renders Marp decks and builds the Minimal Mistakes Jekyll index,
+4. uploads `_site/` with `actions/upload-pages-artifact`, and
+5. deploys with `actions/deploy-pages`.
 
 In the repository settings, set GitHub Pages **Source** to **GitHub Actions**. Generated HTML is not committed to a branch.
+
+The index page theme is configured in the generated `public/_config.yml` as `remote_theme: mmistakes/minimal-mistakes@4.27.3`. To change skins or theme options, update `scripts/build_slides.mjs`.
 
 ## Add a new slide deck
 

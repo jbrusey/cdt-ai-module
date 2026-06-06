@@ -4,8 +4,6 @@ theme: default
 paginate: true
 ---
 
----
-
 # pgr week
 
 Style
@@ -28,8 +26,9 @@ Style
 - Make a written note of anything you don’t expect
 
 ---
+<!-- _class: lead -->
 
-# #1: Don’t wait - write!
+# #1: don’t wait - write!
 
 ---
 
@@ -89,6 +88,8 @@ writing the paper is how you develop the idea in the first place it usually turn
 
 ---
 
+<!-- _class: lead -->
+
 # #2: Identify your key idea
 
 ---
@@ -117,6 +118,8 @@ writing the paper is how you develop the idea in the first place it usually turn
   - “In this section, we present the main contribution of this paper.”
 
 ---
+
+<!-- _class: lead -->
 
 # #3: Tell a story
 
@@ -162,6 +165,8 @@ I see how that works! Ingenious!
 
 ---
 
+<!-- _class: lead -->
+
 # #4: Nail your contributions
 
 ---
@@ -193,6 +198,8 @@ cool!
 
 ---
 
+<!-- _class: lead -->
+
 # Slide 21
 
 ![](images/d1s2_style/slide-21-image-01.png)
@@ -223,6 +230,8 @@ cool!
 - The introduction should survey whole paper, so a “structure” paragraph is just duplication.
 
 ---
+
+<!-- _class: lead -->
 
 # #5: Related work (later)
 
@@ -260,6 +269,8 @@ to make my work look good, I need to make other’s work look bad
 
 ---
 
+<!-- _class: lead -->
+
 # #6: Put your readers first
 
 ---
@@ -289,6 +300,8 @@ example
 - choose the most direct route to the idea
 
 ---
+
+<!-- _class: lead -->
 
 # #7: Listen to your readers
 

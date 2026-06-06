@@ -8,6 +8,7 @@ const slidesDir = join(root, 'slides');
 const publicDir = join(root, 'public');
 const publicSlidesDir = join(publicDir, 'slides');
 const cacheDir = join(root, '.marp-cache');
+const siteDir = join(root, '_site');
 const localMarp = process.platform === 'win32'
   ? join(root, 'node_modules', '.bin', 'marp.cmd')
   : join(root, 'node_modules', '.bin', 'marp');
@@ -19,7 +20,8 @@ function usage() {
 function clean() {
   rmSync(publicDir, { recursive: true, force: true });
   rmSync(cacheDir, { recursive: true, force: true });
-  console.log('Removed public/ and .marp-cache/');
+  rmSync(siteDir, { recursive: true, force: true });
+  console.log('Removed public/, _site/, and .marp-cache/');
 }
 
 function fail(message) {
@@ -86,32 +88,35 @@ function rewriteImagePaths(markdown) {
 
 function writeIndex(decks) {
   const items = decks.map((deck) => {
-    return `      <li><a href="slides/${encodeURIComponent(deck.slug)}/">${htmlEscape(deck.title)}</a></li>`;
+    return `- <a href="slides/${encodeURIComponent(deck.slug)}/">${htmlEscape(deck.title)}</a>`;
   }).join('\n');
 
-  const html = `<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CDT AI Module slide decks</title>
-    <style>
-      body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.5; }
-      h1 { margin-bottom: 0.25rem; }
-      ul { padding-left: 1.25rem; }
-      li { margin: 0.35rem 0; }
-    </style>
-  </head>
-  <body>
-    <h1>CDT AI Module slide decks</h1>
-    <p>Generated from Marp Markdown sources in <code>slides/</code>.</p>
-    <ul>
+  const markdown = `---
+layout: single
+title: CDT AI Module slide decks
+classes: wide
+---
+
+Generated from Marp Markdown sources in \`slides/\`.
+
+## Available decks
+
 ${items}
-    </ul>
-  </body>
-</html>
 `;
-  writeFileSync(join(publicDir, 'index.html'), html, 'utf8');
+  writeFileSync(join(publicDir, 'index.md'), markdown, 'utf8');
+}
+
+function writeJekyllConfig() {
+  const config = `title: CDT AI Module
+remote_theme: mmistakes/minimal-mistakes@4.27.3
+minimal_mistakes_skin: default
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+include:
+  - slides
+`;
+  writeFileSync(join(publicDir, '_config.yml'), config, 'utf8');
 }
 
 function build() {
@@ -163,6 +168,7 @@ function build() {
   }
 
   writeIndex(decks);
+  writeJekyllConfig();
   console.log(`Built ${decks.length} deck(s) into public/`);
 }
 

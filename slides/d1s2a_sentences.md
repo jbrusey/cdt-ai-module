@@ -4,8 +4,6 @@ theme: default
 paginate: true
 ---
 
----
-
 # pgr week
 
 Sentences and Paragraphs

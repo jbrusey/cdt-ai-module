@@ -4,8 +4,6 @@ theme: default
 paginate: true
 ---
 
----
-
 # pgr week
 
 Mathematics, Algorithms, Plots, Diagrams
