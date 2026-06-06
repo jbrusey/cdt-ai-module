@@ -59,7 +59,14 @@ june 2026
 
 ---
 
-# schedule for module - monday
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# schedule for module
+
+---
+
+# monday
 
 | Time        | Session                               |
 | ----------- | ------------------------------------- |

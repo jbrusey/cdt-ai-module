@@ -1,4 +1,3 @@
-
 ---
 marp: true
 title: d1s0 schedule
@@ -7,7 +6,12 @@ theme: gaia
 paginate: true
 ---
 
-# schedule for module - monday
+<!-- _class: lead -->
+
+# schedule for module
+
+---
+# monday
 
 | Time        | Session                               |
 | ----------- | ------------------------------------- |
@@ -23,15 +27,15 @@ paginate: true
 
 # tuesday
 
-| Time        | Session                                               |
-| ----------- | ----------------------------------------------------- |
-| 09:00–09:10 | Meditation                                            |
-| 09:10–10:30 | Literature review                                     |
-| 10:45–12:15 | Publishing (Matthew England 10–11) + writing exercise |
-| 13:00–14:00 | Originality, significance & rigour                    |
-| 14:00–15:00 | LLM Ethics (Simon Ellis)                              |
-| 15:00–15:30 | Discussion                                            |
-| 15:45–17:00 | Editing, proofreading & refereeing                    |
+| Time        | Session                            |
+|-------------|------------------------------------|
+| 09:00–09:10 | Meditation                         |
+| 09:10–10:30 | Literature review                  |
+| 10:45–12:15 | Publishing + writing exercise      |
+| 13:00–14:00 | Originality, significance & rigour |
+| 14:00–15:00 | LLM Ethics (Simon Ellis)           |
+| 15:00–15:30 | Discussion                         |
+| 15:45–17:00 | Editing, proofreading & refereeing |
 
 ---
 
@@ -67,4 +71,4 @@ paginate: true
 | 09:10–10:30 | Research Toolkit (student-led) + OpenCode + AutoResearch + demos |
 | 10:45–12:00 | Reinforcement Learning + Closing + People's Choice Award         |
 
----
+
