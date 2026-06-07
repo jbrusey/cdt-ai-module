@@ -22,6 +22,14 @@ style: |
   a {
     text-decoration: none;
   }
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  footer {
+    font-size: 0.5em;
+  }
 ---
 <!-- _class: lead -->
 <!-- _paginate: false -->
@@ -61,12 +69,11 @@ style: |
 
 # maths
 
-- Strongly recommend LyX or LaTeX
-- or possibly:
-- http://www.codecogs.com/latex/eqneditor.php
+- Strongly recommend $\LaTeX$
+- or possibly: http://www.codecogs.com/latex/eqneditor.php
 - (but result is pixelated unless you use pdf/svg)
 
-![](images/d1s3_maths/slide-05-image-01.png)
+![w:400](images/d1s3_maths/slide-05-image-01.png)
 
 ---
 
@@ -79,21 +86,21 @@ style: |
 
 # sizing parenthesis
 
-Size parenthesis so they wrap their subclauses
+Size parenthesis so they wrap their subclauses using \\left and \\right
 
-Incorrect
-
-Correct
-
-![](images/d1s3_maths/slide-07-image-01.png)
-
-![](images/d1s3_maths/slide-07-image-02.png)
+$$
+E[\sum_{1\leq i<n} i^2]
+$$
+vs
+$$
+E \left[\sum_{1\leq i<n} i^2\right]
+$$
 
 ---
 
 # avoid wrong para breaks
 
-![](images/d1s3_maths/slide-08-image-01.png)
+![h:500](images/d1s3_maths/slide-08-image-01.png)
 
 ---
 
@@ -102,8 +109,9 @@ Correct
 - Internal variables are like i, s in
 - other variables / functions need explanation.
 - e.g. what is g?
-
-![](images/d1s3_maths/slide-09-image-01.png)
+$$
+g(s) = \sum_{0\leq i < \infty} s/i
+$$
 
 ---
 
@@ -111,8 +119,9 @@ Correct
 
 - Use LyX, LaTeX, or codecogs to typeset the following equation:
 - for bonus marks, put parenthesis around the bit being “maxed” so that the brackets are sized correctly
-
-![](images/d1s3_maths/slide-10-image-01.png)
+$$
+V^*(s)=\max_a R(s, a) + \gamma \sum_{s'} P(s'\mid s,a) V^*(s').
+$$
 
 ---
 
@@ -159,26 +168,36 @@ Correct
 
 # example
 
-- weighted_sum(v, w):
-- for i in range(len(v)):
-- wsum += w[i]*v[i]
-- return wsum
+```{python}
+def weighted_sum(v, w):
+    for i in range(len(v)):
+        wsum += w[i]*v[i]
+    return wsum
+```
 
 ---
 
 # improved version
 
-- The same idea can be given as a formula:
-- Note that algorithmic statements are generally sequential, while equations are timeless, so use ← to make clear you mean assignment
+The same idea can be given as a formula:
+$$
+\mathit{WeightedSum}(\mathbf{v}, \mathbf{w})=\sum_i w_i v_i
+$$
+or even just $\mathbf{w}^T \mathbf{v}$
 
-![](images/d1s3_maths/slide-16-image-01.png)
+Note that algorithmic statements are generally sequential, while equations are timeless, so use ← to make clear you mean assignment
 
 ---
 
 # or even without explanation
 
-- ws ← weighted_sum(v, w)
-- since the idea of a weighted sum is commonplace
+
+
+```{python}
+ws ← weighted_sum(v, w)
+```
+
+since the idea of a weighted sum is commonplace
 
 ---
 
@@ -200,8 +219,12 @@ Correct
 - plot any way you like but pay attention to grouping and timestamps
 
 ---
+<!-- _footer: Source: [Writing / Drawing Diagrams](https://jamesbrusey.coventry.domains/writing/drawing-diagrams-and-figures-for-research-articles-and-theses/) -->
 
 # diagrams
+
+<div class="columns">
+<div>
 
 - Start with a rough sketch
 - Size your canvas appropriately before laying out
@@ -210,19 +233,24 @@ Correct
 - Try to use standard diagrams
 - Be careful with resizing
 
+</div>
+<div>
+
 - Drawing arrows between shapes
 - Sizing boxes with text
 - Choosing a good colour scheme
 - Print out and review
 - Check for spelling errors
 - A check-list for graphics
-- https://jamesbrusey.coventry.domains/writing/drawing-diagrams-and-figures-for-research-articles-and-theses/
+
+</div>
+</div>
 
 ---
 
 # examples
 
-![](images/d1s3_maths/slide-21-image-01.png)
+![h:500](images/d1s3_maths/slide-21-image-01.png)
 
 <!--
 illustrates use of curved arrows to centroid of box or element (with offset for some arrows to keep them separate) image produced using metapost
@@ -232,25 +260,25 @@ illustrates use of curved arrows to centroid of box or element (with offset for 
 
 # original architecture figure
 
-![](images/d1s3_maths/slide-22-image-01.jpg)
+![w:800](images/d1s3_maths/slide-22-image-01.jpg)
 
 ---
 
 # revised architecture figure
 
-![](images/d1s3_maths/slide-23-image-01.png)
+![w:800](images/d1s3_maths/slide-23-image-01.png)
 
 ---
 
 # original diagram
 
-![](images/d1s3_maths/slide-24-image-01.png)
+![w:800](images/d1s3_maths/slide-24-image-01.png)
 
 ---
 
 # revised diagram
 
-![](images/d1s3_maths/slide-25-image-01.png)
+![w:800](images/d1s3_maths/slide-25-image-01.png)
 
 ---
 

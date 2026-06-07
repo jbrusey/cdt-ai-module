@@ -337,7 +337,7 @@ Be truly grateful for criticism
 
 # seven simple suggestions
 
-![](images/d1s2_style/slide-38-image-01.jpg)
+<iframe width="998" height="562" src="https://www.youtube.com/embed/WP-FkUaOcOM" title="How to Write a Great Research Paper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!--
 finish by 10
@@ -353,9 +353,7 @@ which suggestions did you find most surprising or inspirational?
 
 # pomodoro technique
 
-www.pomodorotechnique.com
-
-![](images/d1s2_style/slide-40-image-01.jpg)
+<iframe width="998" height="562" src="https://www.youtube.com/embed/dnt2lTdcn8g" Title="The Pomodoro® Technique" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -389,9 +387,8 @@ finish by 10:30 - possible coffee break
 
 ---
 
-# Slide 45
 
-![](images/d1s2_style/slide-45-image-01.png)
+![h:600](images/d1s2_style/slide-45-image-01.png)
 
 ---
 

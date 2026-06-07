@@ -31,7 +31,7 @@ style: |
 
 ---
 
-# - How to improve your writing
+# How to improve your writing
 
 - Reduce clutter
 - Match number of subject and verb
@@ -42,7 +42,7 @@ style: |
 
 ---
 
-# - Reduce clutter – hand waving
+# Reduce clutter – hand waving
 
 - Avoid starting with vagueness and hand-waving
   - “Nowadays, sensors are able to gather data everywhere from businesses, infrastructures, our environment, and even ourselves”
@@ -52,7 +52,7 @@ style: |
 
 ---
 
-# - Reduce clutter – clearing the throat
+# Reduce clutter – clearing the throat
 
 - Some writers feel it necessary to include a short prelude:
   - “As a matter of fact, …”
@@ -63,7 +63,7 @@ style: |
 
 ---
 
-# - Reduce clutter – qualifiers and hyperbole
+# Reduce clutter – qualifiers and hyperbole
 
 - Avoid “very”, “little”, “pretty”
   - Can usually be deleted without changing the meaning (pretty much)
@@ -74,14 +74,14 @@ style: |
 
 ---
 
-# - Match number of subject and verb
+# Match number of subject and verb
 
 - The number of the subject should match the number of the verb
 - Philippines is one of the highly mineralized  country in the world
 
 ---
 
-# - Match number of subject and verb
+# Match number of subject and verb
 
 - The number of the subject should match the number of the verb
 - Philippines is one of the highly mineralized  country in the world
@@ -90,13 +90,13 @@ style: |
 
 ---
 
-# - Match number of subject and verb
+# Match number of subject and verb
 
 - He choose one of the desserts
 
 ---
 
-# - Match number of subject and verb
+# Match number of subject and verb
 
 - He choose one of the desserts
 - He chooses one of the desserts
@@ -105,13 +105,13 @@ style: |
 
 ---
 
-# - Match number of subject and verb
+# Match number of subject and verb
 
 - For example, a robot is moving forward while being given a positive rewards instruction and moving backward under negative rewards.
 
 ---
 
-# - Match number of subject and verb
+# Match number of subject and verb
 
 - For example, a robot is moving forward while being given a positive rewards instruction and moving backward under negative rewards.
 - For example, when the robot moves forward, it receives a positive reward; whereas, when it moves backwards, it receives a negative reward.
@@ -123,7 +123,7 @@ style: |
 
 ---
 
-# - Use strong verbs
+# Use strong verbs
 
 - Strong verbs make your writing lively
 - Weak verbs, often paired with verbs converted to nouns, make clunky sentences
@@ -137,26 +137,26 @@ Based on Stanford sciwrite course
 
 ---
 
-# - Strong verb example
+# Strong verb example
 
 Signal conditioning circuits are helpful to manipulate the sensor output signals to interface between the electronic circuits.
 
 ---
 
-# - Strong verb example
+# Strong verb example
 
 - Signal conditioning circuits are helpful to manipulate the sensor output signals to interface between the electronic circuits.
 - Signal conditioning manipulates an analogue signal to meet the requirements of the next stage in an electronic circuit.
 
 ---
 
-# - Avoid a lot of “to be” sentences
+# Avoid a lot of “to be” sentences
 
 The main focus of this paper is on stacking containers problem in a container yard. The aim of this work is to improve the storage and retrieval operations of containers. The main resource of a container terminal is a storage area(container yard)  where the containers can be stored for a while and retrieved when a customer request takes place at the terminal. The stacking of containers will be optimised using a number of tools and techniques discrete event simulation method, fuzzy concept, and GA (Genetic Algorithm).  The containers will be stacked based on their due date and time, this will minimise the retrieval time of containers and waiting time of customers’ trucks as key performance indicators. The due dates and times of containers are uncertainty.
 
 ---
 
-# - Avoid passive voice
+# Avoid passive voice
 
 - Passive voice has the structure “object – verb – subject” or sometimes just “object - verb”
 - Active voice is “subject verb object” or sometimes just “subject verb”
@@ -167,40 +167,40 @@ The main focus of this paper is on stacking containers problem in a container ya
 
 ---
 
-# - Passive voice example
+# Passive voice example
 
 On completion of this research work, country specific drivers and barriers to the achievement of a sustainable downstream supply chain in the UK and Nigeria will be identified and factors responsible for similarities or variations in SSCM practices will be evaluated.
 
 ---
 
-# - Passive voice example
+# Passive voice example
 
 - On completion of this research work, country specific drivers and barriers to the achievement of a sustainable downstream supply chain in the UK and Nigeria will be identified and factors responsible for similarities or variations in SSCM practices will be evaluated.
 - In this work, I will identify country specific drivers and barriers to a sustainable downstream supply chain in the UK and Nigeria. I will also evaluate the factors responsible for similarities or differences in supply chain management practices between the two countries.
 
 ---
 
-# - Passive voice example 2
+# Passive voice example 2
 
 The pipelined Analog to Digital (ADC) has been designed using class AB amplifier and background digital calibration technique.
 
 ---
 
-# - Passive voice example 2
+# Passive voice example 2
 
 - The pipelined Analog to Digital (ADC) has been designed using class AB amplifier and background digital calibration technique.
 - We designed a pipelined Analog to Digital Converter (ADC) using a class AB amplifier and a background digital calibration technique.
 
 ---
 
-# - Passive voice example 3
+# Passive voice example 3
 
 - Therefore a mango waste processing facility is developed to fully convert mango peels and seed into profitable products such as mango flour and tea.
 - Solar energy is applied as the main power source of this facility to dry raw mango peels and seeds for further processing.
 
 ---
 
-# - Passive voice example 3
+# Passive voice example 3
 
 - Therefore, a local company constructed a mango waste processing facility that converts mango peel and seed into a profitable product, such as mango flour and tea.
 - Solar energy powers the drying of is applied as the main power source of this facility to dry raw mango peels and seeds for further processing.
@@ -211,7 +211,7 @@ The pipelined Analog to Digital (ADC) has been designed using class AB amplifier
 
 ---
 
-# - Paragraphs
+# Paragraphs
 
 - Keep paragraphs reasonably short
 - Try to have 1 idea per paragraph
@@ -221,23 +221,13 @@ The pipelined Analog to Digital (ADC) has been designed using class AB amplifier
 
 ---
 
-# - Example: identify para break
+# Example: identify para break
 
 - For the GTEM system, acknowledgements are costly but needed for L-SIP to be used [1]. To obtain the best benefit from L-SIP, we needed to tune the acknowledgement approach. Instead of using the standard ZStack APS acknowledgement mechanism, we instead use ZigBee polling after each transmit. In ZigBee polling, an end device polls or requests a message from the coordinator. As shown in Figure 9, ordinary APS acknowledgements cause the processor stay active while waiting. In comparison, with polling, as shown in Figure 10, the node sleeps (and thus is idle) while waiting for the receipt of the acknowledgement. The resulting reduction in energy is 0.98 mW (17% of Base), which is significant.
 
 ---
 
-# - Example: identify para break
-
-- For the GTEM system, acknowledgements are costly but needed for L-SIP to be used [1]. To obtain the best benefit from L-SIP, we needed to tune the acknowledgement approach. Instead of using the standard ZStack APS acknowledgement mechanism, we instead use ZigBee polling after each transmit. In ZigBee polling, an end device polls or requests a message from the coordinator. As shown in Figure 9, ordinary APS acknowledgements cause the processor stay active while waiting. In comparison, with polling, as shown in Figure 10, the node sleeps (and thus is idle) while waiting for the receipt of the acknowledgement. The resulting reduction in energy is 0.98 mW (17% of Base), which is significant.
-
-//
-
-//
-
----
-
-# - Example: identify para break
+# Example: identify para break
 
 - For the GTEM system, acknowledgements are costly but needed for L-SIP to be used [1]. To obtain the best benefit from L-SIP, we needed to tune the acknowledgement approach. Instead of using the standard ZStack APS acknowledgement mechanism, we instead use ZigBee polling after each transmit.
 - In ZigBee polling, an end device polls or requests a message from the coordinator. As shown in Figure 9, ordinary APS acknowledgements cause the processor stay active while waiting. In comparison, with polling, as shown in Figure 10, the node sleeps (and thus is idle) while waiting for the receipt of the acknowledgement.
@@ -245,7 +235,7 @@ The pipelined Analog to Digital (ADC) has been designed using class AB amplifier
 
 ---
 
-# - Structure
+# Structure
 
 - A strong structure helps clarify the role of each part of the writing
   - For example, a background section should only describe past work and not include any new material
@@ -256,7 +246,7 @@ The pipelined Analog to Digital (ADC) has been designed using class AB amplifier
 
 ---
 
-# - Common scientific structuring (IMRAD)
+# Common scientific structuring (IMRAD)
 
 - Many papers commonly follow a variant of:
   - Introduction; Related work; Method; Results; Conclusions
@@ -266,7 +256,7 @@ The pipelined Analog to Digital (ADC) has been designed using class AB amplifier
 
 ---
 
-# - Structure for non-scientific reports
+# Structure for non-scientific reports
 
 - Non-scientific reports often need a very similar structure but with different headings
 - Executive summary (often bullet pointed conclusions or main points)
@@ -279,7 +269,7 @@ The pipelined Analog to Digital (ADC) has been designed using class AB amplifier
 
 ---
 
-# - CoNVO
+# CoNVO
 
 - Context
   - What the situation is
@@ -294,7 +284,7 @@ From Shron M. (2014) Thinking with Data, O’Reilly.
 
 ---
 
-# - e.g. Driver-less cars
+# e.g. Driver-less cars
 
 - Context: Almost all vehicles currently require active, engaged participation of a human driver.
 - Need: Human drivers are unreliable and error prone leading to loss of life and property damage.
@@ -303,7 +293,15 @@ From Shron M. (2014) Thinking with Data, O’Reilly.
 
 ---
 
-# - Additional information
+# Update for a Gen AI world
+
+- If AI can do all the writing, do we need to know this stuff?
+* Ever heard of AI Slop?
+* Our critical input is needed to add variation, colour, strong verbs, passion
+
+---
+
+# Additional information
 
 - Do the Stanford Writing in the Sciences course
 - Strunk and White’s Elements of Style
