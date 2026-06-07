@@ -1,4 +1,4 @@
-.PHONY: slides preview clean
+.PHONY: slides preview slides-preview clean
 
 JEKYLL_BASEURL ?=
 
@@ -7,8 +7,11 @@ slides:
 	npm run slides
 	bundle exec jekyll build --source public --destination _site --baseurl "$(JEKYLL_BASEURL)"
 
-preview:
-	npm run preview
+preview: slides
+	bundle exec jekyll serve --source public --destination _site --baseurl "$(JEKYLL_BASEURL)"
+
+slides-preview:
+	npm run slides-preview
 
 clean:
 	npm run clean

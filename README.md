@@ -1,10 +1,10 @@
 # cdt-ai-module
 
-This repository contains source PowerPoint decks, converted Marp Markdown decks, and tooling to build the Marp decks for GitHub Pages.
+This repository contains source PowerPoint decks, converted Marp Markdown decks, Jekyll site content, and tooling to build the module site for GitHub Pages.
 
 ## Install dependencies
 
-Install Python dependencies for PowerPoint conversion, Node dependencies for Marp builds, and Ruby/Jekyll dependencies for the themed index page:
+Install Python dependencies for PowerPoint conversion, Node dependencies for Marp builds, and Ruby/Jekyll dependencies for the themed site:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -14,7 +14,7 @@ bundle install
 
 For CI, use `npm ci` instead of `npm install`; GitHub Actions handles the Ruby bundle automatically.
 
-## Convert PowerPoint decks to Marp Markdown
+## Convert PowerPoint decks to Marp Markdown (old)
 
 ```bash
 python scripts/pptx_to_marp.py
@@ -22,36 +22,45 @@ python scripts/pptx_to_marp.py
 
 The converter reads `.pptx` files, writes Marp Markdown to `slides/<deck-name>.md`, and extracts images to `slides/images/<deck-name>/`.
 
-## Build slides locally
+## Build the site locally
 
-Render all `slides/*.md` decks to static HTML:
+Render all `slides/*.md` decks to static HTML and build the Jekyll site:
 
 ```bash
 make slides
 ```
 
-The Marp build writes generated Jekyll source files to `public/`, then Jekyll renders the publishable site to `_site/` using the Minimal Mistakes theme:
+The build copies hand-authored Jekyll source files from `site/` to `public/`, generates a slide-list page at `public/slides.md`, renders Marp decks under `public/slides/`, then Jekyll renders the publishable site to `_site/` using the Minimal Mistakes theme:
 
 ```text
+site/index.md
+site/_config.yml
 public/index.md
-public/_config.yml
+public/slides.md
 public/slides/<deck-name>/index.html
 public/slides/images/<deck-name>/...
 _site/index.html
+_site/slides.html
 _site/slides/<deck-name>/index.html
 ```
 
-`public/` and `_site/` are generated and ignored by git.
+`public/` and `_site/` are generated and ignored by git. Edit pages in `site/`, not `public/`.
 
-## Preview slides locally
+## Preview locally
 
-Start the Marp local preview server:
+Preview the full Jekyll site, including the generated slide-list page and rendered slide decks:
 
 ```bash
 make preview
 ```
 
-This serves the source decks from `slides/` for interactive local preview.
+This builds the site and starts `jekyll serve` using `public/` as the generated Jekyll source directory.
+
+To preview only the source slide decks with Marp's interactive preview server, run:
+
+```bash
+make slides-preview
+```
 
 ## Clean generated output
 
@@ -67,13 +76,13 @@ GitHub Pages is built by `.github/workflows/pages.yml` using GitHub Actions. On 
 
 1. installs Node dependencies with `npm ci`,
 2. installs Ruby/Jekyll dependencies with Bundler,
-3. runs `make slides`, which renders Marp decks and builds the Minimal Mistakes Jekyll index,
+3. runs `make slides`, which renders Marp decks and builds the Minimal Mistakes Jekyll site,
 4. uploads `_site/` with `actions/upload-pages-artifact`, and
 5. deploys with `actions/deploy-pages`.
 
 In the repository settings, set GitHub Pages **Source** to **GitHub Actions**. Generated HTML is not committed to a branch.
 
-The index page theme is configured in the generated `public/_config.yml` as `remote_theme: mmistakes/minimal-mistakes@4.27.3`. To change skins or theme options, update `scripts/build_slides.mjs`.
+The site theme is configured in `site/_config.yml` as `remote_theme: mmistakes/minimal-mistakes@4.27.3`. To change skins or theme options, update `site/_config.yml`.
 
 ## Add a new slide deck
 

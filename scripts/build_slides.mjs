@@ -5,6 +5,7 @@ import { spawnSync } from 'node:child_process';
 
 const root = process.cwd();
 const slidesDir = join(root, 'slides');
+const siteSourceDir = join(root, 'site');
 const publicDir = join(root, 'public');
 const publicSlidesDir = join(publicDir, 'slides');
 const cacheDir = join(root, '.marp-cache');
@@ -86,7 +87,12 @@ function rewriteImagePaths(markdown) {
     .replace(/(<img\b[^>]*\bsrc=["'])images\//g, '$1../images/');
 }
 
-function writeIndex(decks) {
+function copySiteSource() {
+  if (!existsSync(siteSourceDir)) fail('site/ directory does not exist.');
+  cpSync(siteSourceDir, publicDir, { recursive: true });
+}
+
+function writeSlideList(decks) {
   const items = decks.map((deck) => {
     return `- <a href="slides/${encodeURIComponent(deck.slug)}/">${htmlEscape(deck.title)}</a>`;
   }).join('\n');
@@ -95,6 +101,7 @@ function writeIndex(decks) {
 layout: single
 title: CDT AI Module slide decks
 classes: wide
+permalink: /slides.html
 ---
 
 Generated from Marp Markdown sources in \`slides/\`.
@@ -103,25 +110,13 @@ Generated from Marp Markdown sources in \`slides/\`.
 
 ${items}
 `;
-  writeFileSync(join(publicDir, 'index.md'), markdown, 'utf8');
-}
-
-function writeJekyllConfig() {
-  const config = `title: CDT AI Module
-remote_theme: mmistakes/minimal-mistakes@4.27.3
-minimal_mistakes_skin: default
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-include:
-  - slides
-`;
-  writeFileSync(join(publicDir, '_config.yml'), config, 'utf8');
+  writeFileSync(join(publicDir, 'slides.md'), markdown, 'utf8');
 }
 
 function build() {
   ensureMarp();
   clean();
+  copySiteSource();
   mkdirSync(publicSlidesDir, { recursive: true });
   mkdirSync(cacheDir, { recursive: true });
 
@@ -167,8 +162,7 @@ function build() {
     console.log(`Rendered ${relative(root, file)} -> ${relative(root, outHtml)}`);
   }
 
-  writeIndex(decks);
-  writeJekyllConfig();
+  writeSlideList(decks);
   console.log(`Built ${decks.length} deck(s) into public/`);
 }
 

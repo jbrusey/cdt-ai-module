@@ -1,9 +1,49 @@
 ---
 marp: true
-title: d1s1 introduction
+html: true
+title: 01 introduction
 author: james brusey
 theme: gaia
 paginate: true
+style: |
+  section {
+    font-size: 28px;
+    background-color: #252a34;
+    color: #eeeeee;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+  }
+  h1 {
+    font-size: 2.2em;
+    color: #ffffff;
+    border-bottom: 1px solid #333b49;
+  }
+  h2 {
+    font-size: 1.6em;
+    color: #ffffff;
+    border-bottom: 1px solid #333b49;
+  }
+  h3 {
+    font-size: 1.3em;
+    color: #ffffff;
+    border-bottom: 1px solid #333b49;
+  }
+  a {
+    color: #769dd5;
+    text-decoration: none;
+  }
+  code {
+    background-color: #333b49;
+    color: #ffb454;
+  }
+  li {
+    color: #eeeeee;
+  }
+  table {
+    color: #eeeeee;
+  }
+  footer {
+    color: #7a828e;
+  }
 ---
 
 <!-- _class: lead -->
@@ -186,3 +226,93 @@ end of this section by 9:30-ish
 - what are the likely obstacles?
 - can you write down a road map?
 - have you agreed on how to work with your supervisor?
+
+---
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# presenting and 3mt
+
+---
+
+# here is an example
+
+<div style="text-align: center;">
+  <iframe 
+    width="800" 
+    height="450" 
+    src="https://www.youtube.com/embed/PczCM3GwB4Q" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+---
+# 3mt rules
+1. one slide, no animations / video
+2. presenter 1 has slide 1, p2 has s2, etc
+3. running order will be issued day before
+4. 3 minutes max (no talking after or risk disqualification)
+
+
+---
+
+# what to include
+
+1. why (problem)
+2. method
+3. impact
+
+---
+
+# criteria for success
+
+1. clarity
+   * *what* are you trying to say?
+   * in what *order*?
+   * how much *detail*?
+2. engagement
+3. significance
+4. delivery
+
+--- 
+
+# criteria for success
+
+1. clarity
+2. engagement
+   * *active* participation
+   * *look* at everyone
+   * use *props*
+   * *exaggerate* body language
+   * don't read your slides
+3. significance
+4. delivery
+
+---
+
+# criteria for success
+
+1. clarity
+2. engagement
+3. significance
+   * whose life will be saved / improved?
+   * what is the path towards that?
+4. delivery
+
+---
+
+# criteria for success
+
+1. clarity
+2. engagement
+3. significance
+4. delivery
+   * umms and ahhs
+   * plan your intro
+   * end like you deserve a standing ovation
+   * (even if you don't get one!)
+

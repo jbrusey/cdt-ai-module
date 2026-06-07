@@ -1,0 +1,8 @@
+title: CDT AI Module
+remote_theme: mmistakes/minimal-mistakes@4.27.3
+minimal_mistakes_skin: dark
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+include:
+  - slides

@@ -5,7 +5,7 @@
   "description": "Build and preview Marp slide decks for the CDT AI module.",
   "scripts": {
     "slides": "node scripts/build_slides.mjs",
-    "preview": "marp --server --allow-local-files slides",
+    "slides-preview": "marp --server --allow-local-files --html slides",
     "clean": "node scripts/build_slides.mjs --clean"
   },
   "devDependencies": {
