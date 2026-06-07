@@ -7,41 +7,19 @@ paginate: true
 style: |
   section {
     font-size: 28px;
-    background-color: #252a34;
-    color: #eeeeee;
     font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   }
   h1 {
     font-size: 2.2em;
-    color: #ffffff;
-    border-bottom: 1px solid #333b49;
   }
   h2 {
     font-size: 1.6em;
-    color: #ffffff;
-    border-bottom: 1px solid #333b49;
   }
   h3 {
     font-size: 1.3em;
-    color: #ffffff;
-    border-bottom: 1px solid #333b49;
   }
   a {
-    color: #769dd5;
     text-decoration: none;
-  }
-  code {
-    background-color: #333b49;
-    color: #ffb454;
-  }
-  li {
-    color: #eeeeee;
-  }
-  table {
-    color: #eeeeee;
-  }
-  footer {
-    color: #7a828e;
   }
 ---
 <!-- _class: lead -->

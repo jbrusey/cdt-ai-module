@@ -7,41 +7,19 @@ paginate: true
 style: |
   section {
     font-size: 28px;
-    background-color: #252a34;
-    color: #eeeeee;
     font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
   }
   h1 {
     font-size: 2.2em;
-    color: #ffffff;
-    border-bottom: 1px solid #333b49;
   }
   h2 {
     font-size: 1.6em;
-    color: #ffffff;
-    border-bottom: 1px solid #333b49;
   }
   h3 {
     font-size: 1.3em;
-    color: #ffffff;
-    border-bottom: 1px solid #333b49;
   }
   a {
-    color: #769dd5;
     text-decoration: none;
-  }
-  code {
-    background-color: #333b49;
-    color: #ffb454;
-  }
-  li {
-    color: #eeeeee;
-  }
-  table {
-    color: #eeeeee;
-  }
-  footer {
-    color: #7a828e;
   }
 ---
 <!-- _class: lead -->
@@ -77,53 +55,30 @@ style: |
 
 # writing papers model 1
 
-idea
-
-research
-
-write paper
+![](images/d1s2_style/idea-research-write-paper.svg)
 
 ---
 
 # writing papers model 2
 
-idea
+![](images/d1s2_style/idea-write-paper-research.svg)
 
-research
 
-write paper
+* writing is doing research - not just reporting research
 
-idea
-
-write paper
-
-research
+* forces us to be clear / focused
+* articulates what we don’t understand
+* opens the way to collaborate with others
 
 ---
 
-# writing papers model 2
-
-idea
-
-write paper
-
-research
-
-writing is doing research - not just reporting research
-
-- forces us to be clear / focused
-- articulates what we don’t understand
-- opens the way to collaborate with others
-
----
 
 # do not be intimidated
 
-fallacy - you need to have a fantastic idea before you can write a paper
+**fallacy** - you need to have a fantastic idea before you can write a paper
 
-write a paper / give a talk on
-any idea
-no matter how poor you initially think the idea to be
+write a paper / give a talk on *any idea* no matter how poor you
+initially think the idea to be
 
 <!--
 writing the paper is how you develop the idea in the first place it usually turns out to be more interesting and challenging than you first thought
@@ -217,11 +172,9 @@ I see how that works! Ingenious!
 # molehills not mountains
 
 - “Computer programs often have bugs [1]. It’s important to eliminate these bugs [2,3]. Many researchers have tried [4-9]. It’s really very important”
+* yawn!
 - “Consider this program, which has an interesting bug … we will show an automatic method for identifying and removing such bugs”
-
-yawn!
-
-cool!
+* cool!
 
 ---
 
@@ -235,17 +188,11 @@ cool!
 
 # state your contributions
 
-![](images/d1s2_style/slide-20-image-01.png)
-
-![](images/d1s2_style/slide-20-image-02.png)
+![w:800](images/d1s2_style/slide-20-image-01.png)
+![w:800](images/d1s2_style/slide-20-image-02.png)
 
 ---
-
-<!-- _class: lead -->
-
-# Slide 21
-
-![](images/d1s2_style/slide-21-image-01.png)
+![w:800](images/d1s2_style/slide-21-image-01.png)
 
 ---
 
@@ -329,8 +276,7 @@ to make my work look good, I need to make other’s work look bad
 
 # how to convey the intuition?
 
-Begin with an
-example
+Begin with an example
 
 - follow with the general case
 - explain as if at a whiteboard
