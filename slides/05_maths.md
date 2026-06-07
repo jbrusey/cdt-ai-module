@@ -1,7 +1,7 @@
 ---
 marp: true
 html: true
-title: d1s3 maths
+title: 05 mathematics, algorithms, plots, diagrams
 author: james brusey
 theme: gaia
 paginate: true
@@ -45,10 +45,12 @@ style: |
     color: #7a828e;
   }
 ---
+<!-- _class: lead -->
+<!-- _paginate: false -->
 
-# pgr week
+# 05 mathematics, algorithms, plots, diagrams
 
-Mathematics, Algorithms, Plots, Diagrams
+![w:280](images/cdt-logo.png) 
 
 ---
 

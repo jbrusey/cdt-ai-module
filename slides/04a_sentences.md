@@ -1,6 +1,7 @@
 ---
 marp: true
 html: true
+title: 04a sentences and paragraphs
 theme: gaia
 paginate: true
 style: |
@@ -43,10 +44,12 @@ style: |
     color: #7a828e;
   }
 ---
+<!-- _class: lead -->
+<!-- _paginate: false -->
 
-# pgr week
+# 04a sentences and paragraphs
 
-Sentences and Paragraphs
+![w:280](images/cdt-logo.png) 
 
 ---
 

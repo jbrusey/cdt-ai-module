@@ -1,7 +1,7 @@
 ---
 marp: true
 html: true
-title: d1s0 schedule
+title: 00 schedule
 author: james brusey
 theme: gaia
 paginate: true
@@ -45,10 +45,12 @@ style: |
     color: #7a828e;
   }
 ---
-
 <!-- _class: lead -->
+<!-- _paginate: false -->
 
-# schedule for module
+# 00 schedule
+
+![w:280](images/cdt-logo.png) 
 
 ---
 # monday

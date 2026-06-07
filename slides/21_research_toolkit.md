@@ -1,6 +1,7 @@
 ---
 marp: true
 html: true
+title: 21 research toolkit
 theme: gaia
 paginate: true
 style: |
@@ -43,10 +44,12 @@ style: |
     color: #7a828e;
   }
 ---
+<!-- _class: lead -->
+<!-- _paginate: false -->
 
-# pgr week
+# 21 research toolkit
 
-Research toolkit
+![w:280](images/cdt-logo.png) 
 
 ---
 

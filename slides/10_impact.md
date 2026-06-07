@@ -1,6 +1,7 @@
 ---
 marp: true
 html: true
+title: 10 impact
 theme: gaia
 paginate: true
 style: |
@@ -43,14 +44,12 @@ style: |
     color: #7a828e;
   }
 ---
+<!-- _class: lead -->
+<!-- _paginate: false -->
 
-# How to facilitate / support impact / partnership building / international collaboration / commercialisation
+# 10 impact
 
-- - Understand research impact and its precursors (i.e., pathways to impact)
-- - Be able to guide proposals towards greater impact
-- - Understand the importance of industry collaboration and international reach to strengthen impact
-
-‹#›
+![w:280](images/cdt-logo.png) 
 
 ---
 

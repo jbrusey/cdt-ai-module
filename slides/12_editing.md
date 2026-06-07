@@ -1,6 +1,7 @@
 ---
 marp: true
 html: true
+title: 12 editing and proofreading
 theme: gaia
 paginate: true
 style: |
@@ -43,10 +44,12 @@ style: |
     color: #7a828e;
   }
 ---
+<!-- _class: lead -->
+<!-- _paginate: false -->
 
-# pgr week
+# 12 editing and proofreading
 
-Editing and proofreading
+![w:280](images/cdt-logo.png) 
 
 ---
 
