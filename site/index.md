@@ -36,6 +36,6 @@ Please use the Teams forum to offer a demo of your favourite tool.
 
 ## Expectations
 
-Tell us about your expectations for the course in this  [document](https://livecoventryac.sharepoint.com/teams/CDTinAI2/Shared%20Documents/Forms/AllItems.aspx?viewid=ece87ed4%2Ddc31%2D4fbd%2Da4a9%2Dca5be925e4ee&FolderCTID=0x012000989A9D49F836B94B9DFDEE3B8C365012&id=%2Fteams%2FCDTinAI2%2FShared%20Documents%2FCDT%2DAI%20Module%202026%2FExpectations%2Emd&parent=%2Fteams%2FCDTinAI2%2FShared%20Documents%2FCDT%2DAI%20Module%202026)
+Tell us about your expectations for the course in this  [document](https://livecoventryac.sharepoint.com/:t:/t/CDTinAI2/IQBEZQ52dMi3Tq86iRrDUeP3AfnyNbtjYLc1gRHmy8YIb88?e=ltFrWY)
 
 
