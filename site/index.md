@@ -36,6 +36,6 @@ Please use the Teams forum to offer a demo of your favourite tool.
 
 ## Expectations
 
-Tell us about your expectations for the course in this  [document](https://livecoventryac.sharepoint.com/:t:/t/CDTinAI2/IQBEZQ52dMi3Tq86iRrDUeP3AfnyNbtjYLc1gRHmy8YIb88?e=ltFrWY)
+Tell us about your expectations for the course in this  [document](https://docs.google.com/document/d/1Ad46FQNuDqT5vTtfHKBzpy4ovcv44yqjjGnww5z85cM/edit?usp=sharing)
 
 
