@@ -162,6 +162,7 @@ We could
 * change to having one day slots - spread 5 days over the year
 * keep the same but change the timing
 
+---
 # what do you want?
 
 - Go to the "Expectations for the course" document and start typing what it is you want out of this course starting with 3 dots
