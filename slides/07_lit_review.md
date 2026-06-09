@@ -63,6 +63,7 @@ style: |
 # finding literature
 
 - search the web with obvious terms
+- use an AI app such as Consensus
 - use academic search engines (google scholar, scopus, researchgate)
 - visit websites for research groups / researchers in the area
 - follow citation references in relevant papers (backward chaining)
@@ -108,6 +109,16 @@ style: |
 - emerge a strong structure and ensure your text explains the topic area
 - consider developing a taxonomy to show area structure
 - consider tabulating papers to summarise details (e.g. number of experiments)
+
+--- 
+
+# having a disciplined approach
+
+- easy to get distracted, go too deep on one paper, or lose track of progress
+- try to keep disciplined - use one pomodoro for search only
+- use the next for a skim read of 2 or 3 papers
+- use another to go deep on a single paper
+- make it a rule: *always* write *something* as a result
 
 ---
 
