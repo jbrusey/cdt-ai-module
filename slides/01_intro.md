@@ -119,8 +119,8 @@ june 2026
 | 09:00–09:10 | Meditation                                      |
 | 09:10–10:30 | GenAI for PGRs                                  |
 | 10:45–12:15 | How LLMs Work                                   |
-| 13:00–15:30 | Data analysis & reproducible research pipelines |
-| 15:45–17:00 | HPC (Alex Pedcenko)                             |
+| 13:00–14:15 | HPC (Alex Pedcenko)                             |
+| 14:30–15:30 | Data analysis & reproducible research pipelines |
 
 ---
 
