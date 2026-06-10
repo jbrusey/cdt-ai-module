@@ -21,6 +21,27 @@ style: |
   a {
     text-decoration: none;
   }
+  section.small p,
+  section.small li {
+    font-size: 20px;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem;
+    align-items: start;
+  }
+  .columns > div {
+    min-width: 0;
+  }
+  section.checklist li {
+    font-size: 17px;
+    line-height: 1.18;
+  }
+  section.checklist ul {
+    margin-top: 0.2em;
+    margin-bottom: 0.35em;
+  }
 ---
 <!-- _class: lead -->
 <!-- _paginate: false -->
@@ -41,13 +62,13 @@ style: |
 
 ---
 
-# Slide 3
+<!-- _class: lead -->
 
-![](images/d2s3a_experiments_rqs/slide-03-image-01.png)
+![h:500](images/d2s3a_experiments_rqs/slide-03-image-01.png)
 
 ---
+<!-- _class: lead -->
 
-# Slide 4
 
 ![](images/d2s3a_experiments_rqs/slide-04-image-01.png)
 
@@ -67,68 +88,41 @@ style: |
 - it will also lead to potentially different conclusions (although hopefully not conflicting ones)
 
 ---
+<!-- _class: small checklist -->
 
-# critical thinking checklist
+# critical thinking checklist 
 
-- Identify what's important:
-- What are the key ideas, problems, arguments, observations, findings, conclusions?
-- What evidence is there?
-- Distinguish critical from other types of writing (eg descriptive); fact from opinion; bias from reason
-- Evaluate what you find:
-- Explore the evidence - does it convince?
-- What assumptions are being made and inferences drawn?
-- Is there engagement with relevant, up to date research?
-- How appropriate are the methods of investigation?
-- Is there a consistent and logical line of reasoning?
-- Do you agree with what's being said? Why?
-- How is language being used (emotive, biased etc.)?
+<div class="columns">
+<div>
 
-- Look beyond what you're reading/hearing:
-- What other viewpoints, interpretations and perspectives are there? What's the evidence for these? How do they compare?
-- How does your prior knowledge and understanding relate to these ideas, findings, observations etc.?
-- What are the implications of what you're reading/hearing?
-- Clarify your point of view:
-- Weigh up the relevant research in the area
-- Find effective reasons and evidence for your views
-- Reach conclusions on the basis of your reasoning
-- Illustrate your reasons with effective examples
+- **Identify what's important:**
+  - What are the key ideas, problems, arguments, observations, findings, conclusions?
+  - What evidence is there?
+  - Distinguish critical from other types of writing (eg descriptive); fact from opinion; bias from reason
+  
+- **Evaluate what you find:**
+  - Explore the evidence - does it convince?
+  - What assumptions are being made and inferences drawn?
+  - Is there engagement with relevant, up to date research?
+  - How appropriate are the methods of investigation?
+  - Is there a consistent and logical line of reasoning?
+  - Do you agree with what's being said? Why?
+  - How is language being used (emotive, biased etc.)?
+</div>
+<div>
 
----
+- **Look beyond what you're reading/hearing:**
+  - What other viewpoints, interpretations and perspectives are there? What's the evidence for these? How do they compare?
+  - How does your prior knowledge and understanding relate to these ideas, findings, observations etc?
+  - What are the implications of what you're reading/hearing?
 
-# identify what's important
-
-- What are the key ideas, problems, arguments, observations, findings, conclusions?
-- What evidence is there?
-- Distinguish critical from other types of writing (eg descriptive); fact from opinion; bias from reason
-
----
-
-# - evaluate what you find
-
-- Explore the evidence - does it convince?
-- What assumptions are being made and inferences drawn?
-- Is there engagement with relevant, up to date research?
-- How appropriate are the methods of investigation?
-- Is there a consistent and logical line of reasoning?
-- Do you agree with what's being said? Why?
-- How is language being used (emotive, biased etc.)?
-
----
-
-# look beyond what you're reading/hearing
-
-- What other viewpoints, interpretations and perspectives are there? What's the evidence for these? How do they compare?
-- How does your prior knowledge and understanding relate to these ideas, findings, observations etc.?
-- What are the implications of what you're reading/hearing?
-
----
-
-# clarify your point of view
-
-- Weigh up the relevant research in the area
-- Find effective reasons and evidence for your views
-- Reach conclusions on the basis of your reasoning
-- Illustrate your reasons with effective examples
+- **Clarify your point of view:**
+  - Weigh up the relevant research in the area
+  - Find effective reasons and evidence for your views
+  - Reach conclusions on the basis of your reasoning
+  - Illustrate your reasons with effective examples
+</div>
+</div>
 
 ---
 
@@ -157,11 +151,12 @@ style: |
 - cannot analyse statistically
 - one-off may really be a one-off
 
-![](images/d2s3a_experiments_rqs/slide-14-image-01.png)
+![bg right](images/d2s3a_experiments_rqs/slide-14-image-01.png)
 
 ---
 
 # group pre-test post-test design
+
 
 experiment group
 
